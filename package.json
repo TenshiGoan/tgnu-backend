@@ -1,6 +1,6 @@
 {
   "name": "@tgnu/backend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/TenshiGoan/tgnu-backend.git",
   "author": "TenshiGoan <angelgoan@gmail.com>",
   "private": false,
@@ -31,7 +31,8 @@
     "dist/*.mjs",
     "dist/*.d.ts"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@nuxt/kit": "^0.8.1-edge",
     "@types/node": "^16.11.10",
     "typescript": "^4.5.2",
