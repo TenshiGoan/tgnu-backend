@@ -1,0 +1,44 @@
+{
+  "name": "@tgnu/backend",
+  "version": "0.0.1",
+  "repository": "https://github.com/TenshiGoan/tgnu-backend.git",
+  "author": "TenshiGoan <angelgoan@gmail.com>",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "echo TODO: create tests.",
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/compositions.mjs",
+      "require": "./compositions.cjs"
+    },
+    "./module": {
+      "import": "./dist/module.mjs",
+      "require": "./module.cjs"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "main": "./compositions.cjs",
+  "types": "./dist/compositions.d.ts",
+  "files": [
+    "compositions.cjs",
+    "module.cjs",
+    "dist/*.js",
+    "dist/*.mjs",
+    "dist/*.d.ts"
+  ],
+  "dependencies": {
+    "@nuxt/kit": "^0.8.1-edge",
+    "@types/node": "^16.11.10",
+    "typescript": "^4.5.2",
+    "unbuild": "^0.5.13"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
