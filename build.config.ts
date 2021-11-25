@@ -8,6 +8,8 @@ export default defineBuildConfig({
     // Entries
     "./src/module",
     "./src/compositions",
+    "./src/middleware",
+    "./src/plugin",
   ],
   externals: [
     // External libs
@@ -16,5 +18,7 @@ export default defineBuildConfig({
     "@nuxt/types",
     "consola",
     "globby",
+    "pathe",
+    "#app",
   ],
 });

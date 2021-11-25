@@ -1,6 +1,6 @@
 {
   "name": "@tgnu/backend",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "repository": "https://github.com/TenshiGoan/tgnu-backend.git",
   "author": "TenshiGoan <angelgoan@gmail.com>",
   "private": false,
@@ -20,7 +20,8 @@
       "import": "./dist/module.mjs",
       "require": "./module.cjs"
     },
-    "./dist/*": "./dist/*"
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
   },
   "main": "./compositions.cjs",
   "types": "./dist/compositions.d.ts",
@@ -31,10 +32,12 @@
     "dist/*.mjs",
     "dist/*.d.ts"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@nuxt/kit": "^0.8.1-edge"
+  },
   "devDependencies": {
-    "@nuxt/kit": "^0.8.1-edge",
     "@types/node": "^16.11.10",
+    "nuxt3": "^3.0.0-27296423.f3082ca",
     "typescript": "^4.5.2",
     "unbuild": "^0.5.13"
   },

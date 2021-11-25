@@ -12,6 +12,11 @@
       "types": [
          "@types/node"
       ],
+      "paths": {
+         "#app": [
+            "./node_modules/nuxt3/dist/app"
+         ],
+      }
    },
    "include": [
       "**/*"
