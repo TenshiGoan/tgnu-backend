@@ -1,24 +1,22 @@
 import { defineBuildConfig } from "unbuild";
 
 export default defineBuildConfig({
+  inlineDependencies: false,
+  pkg: false,
   declaration: true,
-  emitCJS: false,
+  emitCJS: true,
   cjsBridge: true,
-  entries: [
-    // Entries
-    "./src/module",
-    "./src/compositions",
-    "./src/middleware",
-    "./src/plugin",
-  ],
+  entries: ["./src/module", "./src/index"],
   externals: [
     // External libs
     "@nuxt/kit-edge",
     "@nuxt/schema",
     "@nuxt/types",
+    "ohmyfetch",
     "consola",
     "globby",
     "pathe",
     "#app",
+    "h3",
   ],
 });
